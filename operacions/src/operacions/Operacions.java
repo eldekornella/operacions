@@ -2,22 +2,19 @@ package operacions;
 
 public class Operacions {
 	
-	public static void main (String[] args){
-		
-		System.out.println(factorial_iteratiu(5));
-		
-	}
+	public double factorial_iteratiu(int n){
+        if(n < 0){
+            throw  new IllegalArgumentException();
+        }
+        if(n == 1 || n == 0){
+            return 1;
+        }
 
-	private static int factorial_iteratiu(int numero) {
-		int resultat =1;
-			for (int i= 1; i<= numero;i++){
-				
-				resultat *=i;
-				
-			}
-		return resultat;
-	}
-	
-	
+        int aux = 1;
+        for (int i = 2; i <= n; i++){
+            aux *= i;
+        }
+        return aux;
+    }
 
 }
