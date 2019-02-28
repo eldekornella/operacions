@@ -14,7 +14,7 @@ public class Operacions {
         for (int i = 2; i <= n; i++){
             aux *= i;
         }
-        return aux;
+        return aux; 
     }
 	
 	public double factorial_recursiu(int n){
