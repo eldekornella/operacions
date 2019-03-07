@@ -13,18 +13,18 @@ public class OperacionsTest {
 	}
 
 	@Test
-	public void getRecursivaTest() {
-		Assert.assertEquals(120, fn.getRecursiva(5), 0.001);
+	public void factorialRecursiuTest() {
+		Assert.assertEquals(120, fn.factorial_recursiu(5), 0.001);
 	}
 
 	@Test
-	public void getIterativaTest() {
-		Assert.assertEquals(120, fn.getIterativa(5), 0.001);
+	public void factorialIteratiuTest() {
+		Assert.assertEquals(120, fn.factorial_iteratiu(5), 0.001);
 	}
 
 	@Test(expected = IllegalArgumentException.class)
 	public void getExceptionTest() {
-		double valor = fn.getIterativa(-3);
+		double valor = fn.factorial_iteratiu(-3);
 		System.out.println(valor);
 	}
 }
